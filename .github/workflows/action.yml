@@ -33,10 +33,10 @@ jobs:
            rm -rf code/folder
            
     - name: Copy folder content recursively to remote
-        uses: garygrossgarten/github-action-scp@release
-        with:
-          local: folder
-          remote: code
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+      uses: garygrossgarten/github-action-scp@release
+      with:
+        local: folder
+        remote: code
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
