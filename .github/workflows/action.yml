@@ -39,5 +39,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: README.md
-        targe: code
+        source: "README.md"
+        target: "code"
