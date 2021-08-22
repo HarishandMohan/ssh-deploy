@@ -32,6 +32,9 @@ jobs:
         script: |
            rm -rf code/folder
            
+    - name: parent working directory
+      run: pwd
+           
     - name: Copy folder content recursively to remote
       uses: garygrossgarten/github-action-scp@release
       with:
